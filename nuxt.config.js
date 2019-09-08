@@ -1,4 +1,5 @@
 const colors = require('vuetify/es5/util/colors').default
+const axios = require('axios')
 
 module.exports = {
   mode: 'universal',
@@ -38,6 +39,26 @@ module.exports = {
     '@nuxtjs/vuetify',
   ],
    "generate": {
+     routes:function(){
+       return axios.get(
+         "https://api.storyblok.api/v1/cdn/stories?version=published&token=1RB0kY34PHRpIeSxgWcEFAtt&cv=" + Math.floor(Date.now()/1e3)
+         .then(res => {
+            const schoolPages = res.data.stories.map(page => page.full_slug)
+            return [
+              '/',
+              '/activities',
+              '/codeofconduct',
+              '/gallery',
+              '/history',
+              '/learners',
+              '/newsletters',
+              '/team'
+               ...schoolPages
+                                                     
+            ]
+          });
+       )
+     }
     "dir": "public"
   },
   /*
