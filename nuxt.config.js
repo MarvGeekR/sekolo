@@ -39,7 +39,7 @@ module.exports = {
   ],
    "generate": {
     "dir": "public"
-  }
+  },
   /*
   ** Nuxt.js modules
   */
