@@ -15,7 +15,7 @@
     "express": "^4.16.4",
     "nuxt": "^2.0.0",
     "storyblok-nuxt": "^1.0.1",
-    "@nuxtjs/sitemap": "^0.1.2",
+    "@nuxtjs/sitemap": "^0.1.2"
   },
   "devDependencies": {
     "@nuxtjs/vuetify": "^1.0.0",
