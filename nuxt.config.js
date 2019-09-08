@@ -52,7 +52,7 @@ module.exports = {
               '/history',
               '/learners',
               '/newsletters',
-              '/team'
+              '/team',
                ...schoolPages
                                                      
             ]
