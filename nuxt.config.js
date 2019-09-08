@@ -1,4 +1,5 @@
 const colors = require('vuetify/es5/util/colors').default
+const axios = require('axios')
 
 module.exports = {
   mode: 'universal',
@@ -43,6 +44,10 @@ module.exports = {
   buildModules: [
     '@nuxtjs/vuetify',
   ],
+   "generate": {
+    
+    "dir": "public"
+  },
   /*
   ** Nuxt.js modules
   */
