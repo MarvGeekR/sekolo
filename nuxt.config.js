@@ -31,6 +31,12 @@ module.exports = {
   */
   plugins: [
   ],
+
+  sitemap: {
+      path: '/sitemap.xml',
+      generate: true
+   },
+
   /*
   ** Nuxt.js dev-modules
   */
@@ -50,6 +56,8 @@ module.exports = {
       }
     ]
   ],
+
+
   /*
   ** vuetify module configuration
   ** https://github.com/nuxt-community/vuetify-module

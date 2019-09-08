@@ -1,20 +1,21 @@
 {
   "name": "sekolo",
   "version": "1.0.0",
-  "description": "School website project",
+  "description": "School Website",
   "author": "Marvin Ranyaole",
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
     "build": "nuxt build",
-    "start": "cross-env NODE_ENV=production node server/index.js",
+    "start": "nuxt start",
     "generate": "nuxt generate"
   },
   "dependencies": {
     "cross-env": "^5.2.0",
     "express": "^4.16.4",
     "nuxt": "^2.0.0",
-    "storyblok-nuxt": "^1.0.1"
+    "storyblok-nuxt": "^1.0.1",
+    "@nuxtjs/sitemap": "^0.1.2",
   },
   "devDependencies": {
     "@nuxtjs/vuetify": "^1.0.0",
