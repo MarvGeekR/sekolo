@@ -37,6 +37,9 @@ module.exports = {
   buildModules: [
     '@nuxtjs/vuetify',
   ],
+   "generate": {
+    "dir": "public"
+  }
   /*
   ** Nuxt.js modules
   */
