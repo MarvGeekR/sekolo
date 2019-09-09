@@ -4,7 +4,14 @@
     "public": true,
     "builds": [
         { "src": "nuxt.config.js",
-         "use": "@bluebeel/nuxt" 
+         "use": "@bluebeel/nuxt" ,
+         "config": {
+	        "serverFiles": ["plugins/**", "assets/**", "static/**"]
+	      }
      	}
-    ]
+    ],
+    "routes": [
+    { "src": "/_nuxt/.+", "headers": { "cache-control": "s-maxage=31536000" } },
+    { "src": "/(.*)", "dest": "/" }
+  ],
 }
