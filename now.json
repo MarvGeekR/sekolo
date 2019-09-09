@@ -1,17 +1,22 @@
 {
-    "version": 2,
-    "name": "nuxt",
-    "public": true,
-    "builds": [
-        { "src": "nuxt.config.js",
-         "use": "@bluebeel/nuxt" ,
-         "config": {
-	        "serverFiles": ["plugins/**", "assets/**", "static/**"]
-	      }
-     	}
-    ],
-    "routes": [
-    { "src": "/_nuxt/.+", "headers": { "cache-control": "s-maxage=31536000" } },
-    { "src": "/(.*)", "dest": "/" }
+  "name": "sekolo",
+  "version": 2,
+  "builds": [
+    {
+      "src": "nuxt.config.js",
+      "use": "@nuxtjs/now-builder",
+      "config": {
+        "serverFiles": [
+          "middleware/**",
+          "plugins/**",
+          "lib/**",
+          "package.json"
+        ]
+      }
+    }
   ],
+  "routes": [
+    { "src": "/_nuxt/.+", "headers": { "cache-control": "s-maxage=31536000" } },
+    { "src": "^/(.*)", "dest": "/" }
+  ]
 }
