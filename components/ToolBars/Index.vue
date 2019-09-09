@@ -12,7 +12,7 @@
               dark
               v-on="on"
               class="mr-3"
-              large
+              
             >
               About US
             </v-btn>
@@ -35,7 +35,7 @@
               dark
               v-on="on"
               class="mr-3"
-              large
+              
             >
               Academics
             </v-btn>
@@ -51,14 +51,14 @@
             </v-list-item>
           </v-list>
         </v-menu>
-        <v-btn color="green" large rounded   class="mr-3" @click="navigate('team')">Our Staff</v-btn>
-        <v-btn color="green" large rounded   class="mr-3" @click="navigate('activities')">Mural Activities</v-btn>
-         <v-btn color="green" rounded large  @click="navigate('gallery')">Gallery</v-btn>
+        <v-btn color="green"  rounded   class="mr-3" @click="navigate('team')">Our Staff</v-btn>
+        <v-btn color="green"  rounded   class="mr-3" @click="navigate('activities')">Mural Activities</v-btn>
+         <v-btn color="green" rounded   @click="navigate('gallery')">Gallery</v-btn>
     
 
 
       <div class="flex-grow-1"></div>
-       <v-btn color="green" large rounded   class="mr-3" @click="navigate('newsletters')">News Letters</v-btn>
+       <v-btn color="green"  rounded   class="mr-3" @click="navigate('newsletters')">News Letters</v-btn>
        <template>
         <div class="mr-4">
         <v-icon>mdi-email</v-icon>
