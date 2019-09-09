@@ -1,5 +1,4 @@
 {
-  "name": "sekolo",
   "version": 2,
   "builds": [
     {
@@ -7,17 +6,13 @@
       "use": "@nuxtjs/now-builder",
       "config": {
         "serverFiles": [
-          "middleware/**",
-          "plugins/**",
-          "lib/**",
-          "package.json"
+          "server-middleware/**"
         ]
       }
     }
   ],
-  
   "routes": [
-    { "src": "/_nuxt/.+", "headers": { "cache-control": "s-maxage=31536000" } },
-    { "src": "^/(.*)", "dest": "/" }
+    { "src": "/_nuxt/.+", "headers": { "Cache-Control": "max-age=31557600" } },
+    { "src": "/(.*)", "dest": "/" }
   ]
 }
