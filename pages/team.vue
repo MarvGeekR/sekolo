@@ -21,6 +21,8 @@
       }
     },
 
+
+
     computed:{
 
 
@@ -45,7 +47,8 @@
                 if(res.data.stories[0].name === 'index'){
                   
                   let sections = res.data.stories[0].content.sections;
-                  console.log(sections)
+                  
+                  
                   for(let i=0; i<sections.length; i++){
                  
                     context.store.commit(sections[i].component,sections[i]);

@@ -52,7 +52,9 @@
         get(){
           return this.$store.getters.drawer;
         },
-        set(val){}
+        set(val){
+          this.$store.commit('drawer',val);
+        }
         
        }
     },

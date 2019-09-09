@@ -156,8 +156,9 @@ export const mutations = {
   },
 
   Email (state,email){
-    
+   
     state.email = email
+    
   },
 
   Mobile (state,mobile){

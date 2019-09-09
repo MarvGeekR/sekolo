@@ -130,7 +130,7 @@
 
       email(){
 
-        if(this.$store.getters.email){
+        if(this.$store.getters.email.address){
           
           return this.$store.getters.email.address.url;
         }

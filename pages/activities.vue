@@ -35,7 +35,31 @@
         }).then( res => {
 
            
-          
+          if(context.store.getters.sliders.length === 0){
+
+
+           context.app.$storyapi.get('cdn/stories', {
+              version: context.isDev ? "draft" : "published",
+              starts_with:'home/'
+            }).then( res => {
+
+                
+                if(res.data.stories[0].name === 'index'){
+                  
+                  let sections = res.data.stories[0].content.sections;
+                  
+                  
+                  for(let i=0; i<sections.length; i++){
+                 
+                    context.store.commit(sections[i].component,sections[i]);
+                  }
+
+                }
+ 
+            });
+
+
+          }
            
             if(res.data.stories[0].name === 'activities'){
               

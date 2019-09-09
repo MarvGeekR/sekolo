@@ -120,9 +120,12 @@
           activities: ['Athletics','Chess','Cricket','Debate','Music','Netball'],
         }
     },
+
+
+
     computed:{
 
-       mobile(){
+      mobile(){
         return this.$store.getters.mobile;
       },
 
@@ -133,8 +136,9 @@
 
       email(){
        
-        if(this.$store.getters.email){
-          console.log(this.$store.getters.email)
+
+        if(this.$store.getters.email.address){
+         
           return this.$store.getters.email.address.url;
         }
       }

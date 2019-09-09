@@ -71,24 +71,9 @@
       school(){
 
         return this.$store.getters.school;
-      },
+      }
 
-       email(){
-
-        if(this.$store.getters.email){
-          return this.$store.getters.email.url;
-        }
-      },
-
-      mobile(){
-        return this.$store.getters.mobile;
-      },
-
-      telephone(){
-       
-        return this.$store.getters.telephone;
-      },
-     
+      
 
     },
 

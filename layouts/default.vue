@@ -1,9 +1,9 @@
 <template>
   <v-app id="app">
     
-    <navDrawer class="hidden-md-and-up"></navDrawer>
+   
     <appBar class="hidden-md-and-up mb-12"></appBar>
-
+    <navDrawer class="hidden-md-and-up"></navDrawer>
 
       <v-row   class="hidden-sm-and-down">
         <v-col cols="3">
@@ -102,17 +102,11 @@
         ]
       }
     },
+
+
     computed:{
 
-      drawer:{
 
-        get(){
-          return this.$store.getters.drawer
-        },
-        set(val){
-          this.$store.commit('drawer',val)
-        }
-      },
       sliders(){
        
        return this.$store.getters.sliders;
@@ -127,23 +121,7 @@
       school(){
 
         return this.$store.getters.school;
-      },
-
-       email(){
-
-        if(this.$store.getters.email){
-          return this.$store.getters.email.url;
-        }
-      },
-
-      mobile(){
-        return this.$store.getters.mobile;
-      },
-
-      telephone(){
-       
-        return this.$store.getters.telephone;
-      },
+      }
 
     },
 
