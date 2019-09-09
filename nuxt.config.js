@@ -16,6 +16,11 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script: [
+      {
+        src: "/tawkto.js"
+      }
     ]
   },
   /*
@@ -55,8 +60,7 @@ module.exports = {
     [
       'storyblok-nuxt',
       {
-        accessToken:
-        process.env.NODE_ENV == 'production' ? '1RB0kY34PHRpIeSxgWcEFAtt' : 'hEJLsMJnRZ13X2hpUQwpoQtt',
+        accessToken:'hEJLsMJnRZ13X2hpUQwpoQtt',
         cacheProvider:'memory'
       }
     ]
