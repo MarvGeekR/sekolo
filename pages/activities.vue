@@ -30,7 +30,7 @@
     async asyncData(context) {
 
         return context.app.$storyapi.get('cdn/stories', {
-          version: context.isDev ? "draft" : "published",
+          version: "draft",
           starts_with:'activities/activities'
         }).then( res => {
 

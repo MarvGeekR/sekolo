@@ -39,7 +39,7 @@
 
 
            context.app.$storyapi.get('cdn/stories', {
-              version: context.isDev ? "draft" : "published",
+              version: "draft",
               starts_with:'home/'
             }).then( res => {
 
