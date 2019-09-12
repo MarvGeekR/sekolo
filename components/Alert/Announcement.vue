@@ -27,6 +27,7 @@
     computed:{
 
       announcement(){
+     
         return this.$store.getters.announcement;
       }
 

@@ -194,7 +194,7 @@ export const mutations = {
    
   },
   announcement (state,announcement){
-    state.announcement = announcement.summary
+    state.announcement = announcement.details
   },
   history (state,history){
     state.history = history

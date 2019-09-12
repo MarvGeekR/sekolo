@@ -17,7 +17,6 @@
               <v-menu
                 :key="event.id"
                 v-model="event.open"
-                full-width
                 offset-x
               >
                 <template v-slot:activator="{ on }">
